@@ -1,10 +1,10 @@
 from UserRegistration import UserRegistration
 import logging
 
-logging.baseConfig(
-    filename = "registration.log"
+logging.basicConfig(
+    filename = "registration.log",
     level = logging.INFO,
-    format = '%(asctime)s-%(levelname)s-%(message)s'
+    format = '%(asctime)s - %(levelname)s - %(message)s'
 )
 
 def get_valid_input(prompt,validator,field_name):
